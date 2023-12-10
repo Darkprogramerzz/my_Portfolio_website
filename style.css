@@ -15,6 +15,8 @@
    z-index: 1;
    border-bottom: 10px;
    border-color: aquamarine;
+   border-bottom: 10px;
+   border-color: azure;
   }
   .nav_left{
       width:25%;
@@ -27,7 +29,7 @@
       align-items: center;
    }
  .nav_center{
-    width:40%;
+    width:45%;
     height:100%;
     position: sticky;
     display:flex;
@@ -62,61 +64,39 @@
     margin-right: 5px;
   }
   nav a{
-  font-size: 25px;
+  font-size: 20px;
   text-decoration: none;
   color: blue;
   font-family:Roboto;
   font-weight: 700;
-  transition: 0.3s;
+  transition: all 0.5s;
+  margin-top: 5px;
+  padding-bottom: 8px;
   }
  nav a:hover{
-  color: white;
+  color: rgb(0, 21, 255);
+  border-bottom: 3px solid rgb(0, 21, 255);
+  font-size: 23px;
+
  }
  nav a.active{
   color: white;
+  border-bottom: 3px solid rgb(255, 255, 255);
+  font-size: 25px;
  }
-
   section{
     height:100vh;
     width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 25px;
-    color: blue;
-    font-family:Roboto;
-    font-weight: 700;
   }
   .blue {
     background: #3c31dd;
   }
-
   .red {
     background: #dd3f31;
   }
-
-
   .dark {
     background: #0f0f10;
-  }
-  .spacer{
-    aspect-ratio: 900/450;
-    width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .layer1{
-    background-image: url(./wave-haikei.svg);
-  }
-  .layer2{
-    background-image: url(./layered-waves-haikei.svg);
-  }
-  .layer3{
-    background-image: url(./wave-haike.svg);
-  }
-  .layer4{
-    background-image: url(./wave-haiki.svg);
   }
 
 
