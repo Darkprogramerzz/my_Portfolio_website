@@ -9,11 +9,12 @@
    height: 65px;
    width: 100%;
    background-color:rgb(0, 0, 0) ;
-   box-shadow: 10px 10px 10px rgb(23, 30, 220);
    position:fixed;
    display: flex;
    top: 0px;
    z-index: 1;
+   border-bottom: 10px;
+   border-color: aquamarine;
   }
   .nav_left{
       width:25%;
@@ -76,7 +77,7 @@
  }
 
   section{
-    height:150vh;
+    height:100vh;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -94,14 +95,31 @@
     background: #dd3f31;
   }
 
-  .pink {
-    background: #ff0066;
-    overflow: hidden;
-  }
 
   .dark {
     background: #0f0f10;
   }
+  .spacer{
+    aspect-ratio: 900/450;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .layer1{
+    background-image: url(./wave-haikei.svg);
+  }
+  .layer2{
+    background-image: url(./layered-waves-haikei.svg);
+  }
+  .layer3{
+    background-image: url(./wave-haike.svg);
+  }
+  .layer4{
+    background-image: url(./wave-haiki.svg);
+  }
+
+
 
 
 
