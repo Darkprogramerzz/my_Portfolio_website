@@ -185,24 +185,79 @@
   .progress_bar{
     height: 250px;
     width: 250px;
-    background-color: #dd3f31;
+    background-color:#0f0f10;
     margin-left:10px;
     margin-right: 10px;
     display: flex;
+    position: relative;
   }
   .outer-circle{
     height: 200px;
     width: 200px;
-    background-color: #3c31dd;
     margin-top: 5px;
     margin-left: 25px;
     margin-right: 25px;
     border-radius: 50%;
-    position: relative;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 6px 6px 10px -1px rgb(0, 60, 255),
+    -6px -6px 10px -1px rgb(0, 60, 255) ;
+    background-color: white;
+  }
+  .inner-circle{
+    border-radius: 50%;
+    background-color:white;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0,0.7),
+                 inset -4px -4px 6px -1px rgba(0, 0, 0,0.7),
+                 -0.5px -0.5px 0px rgba(255,255,255,1),
+                 0.5px 0.5px 0px rgba(0,0,0,0.15),
+                 0px 12px 10px -10px rgba(0, 0, 0,0.05);
   }
   .skill_name{
-    background-color: #b74c00;
-    position:relative;
-    bottom: 0px;
+    position:absolute;
+    bottom:0px ;
+    width: 200px;
+    height: 40px;
+    background-color:#0f0f10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 25px 0 25px;
   }
-
+  .skill_name p{
+    font-family:Roboto;
+    font-size: 20px;
+    font-weight: 700;
+    color: #5938ff;
+  }
+  #number{
+    font-family:Roboto;
+    font-size: 25px;
+    font-weight: 700;
+  }
+  circle{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 565;
+    stroke-dashoffset: 565;
+    animation: anim 2s linear forwards;
+  }
+  svg{
+    position: absolute;
+    top: 5px;
+    left: 25px;
+  }
+  @keyframes anim{
+    100%{
+      stroke-dashoffset:197;
+    }
+  }
