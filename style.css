@@ -117,3 +117,57 @@
   .layer4{
     background-image: url(./svg/layered-steps-haikei.svg);
   }
+  .moving-txt{
+    font-family:Roboto;
+    width: 70%;
+    height: 50%;
+    display:flex;
+    margin-top: 45vh;
+    margin-left: 50px;
+  }
+  .static-txt{
+    color: #ffffff;
+    font-size: 70px;
+    font-weight: 600;
+  }
+  .dynamic-txt{
+    margin-left: 15px;
+    line-height: 90px;
+    height: 90px;
+    overflow: hidden;
+  }
+  .dynamic-txt li{
+    list-style: none;
+    color: rgb(66, 89, 163);
+    font-size: 60px;
+    font-weight: 600;
+    position: relative;
+    top: 0;
+    animation: sliding 12s steps(4) infinite;
+  }
+  .dynamic-txtli{
+    position: relative;
+  }
+  .dynamic-txt li ::after{
+    content:"";
+    position: absolute;
+    height: 100%;
+    width: 100%; 
+    border-left:2px solid #3c31dd;
+    left: 0px;
+    animation: typing 2s steps(9) infinite;
+    background-color: #0f0f10;
+  }
+  @keyframes typing{
+    40%,60%{
+       left: calc(100% + 5%);
+    }
+    100%{
+      left: 0px;
+    }
+  }
+  @keyframes sliding{
+    100%{
+      top: -360px;
+    }
+  }
