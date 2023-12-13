@@ -12,7 +12,7 @@
    position:fixed;
    display: flex;
    top: 0px;
-   z-index: 1;
+   z-index: 2;
    border-bottom: 10px;
    border-color: aquamarine;
    border-bottom: 10px;
@@ -59,9 +59,10 @@
   }
   .logo{
     height: 40px;
-    width: 45px;
+    width: 50px;
     margin-left: 15px;
     margin-right: 5px;
+    margin-bottom: 5px;
   }
   nav a{
   font-size: 20px;
@@ -88,34 +89,6 @@
     height:100vh;
     width: 100%;
     display: flex;
-  }
-  .blue {
-    background: #3c31dd;
-  }
-  .red {
-    background: #dd3f31;
-  }
-  .dark {
-    background: #0f0f10;
-  }
-  .spacer{
-    aspect-ratio:900/100;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
-  .layer1{
-    background-image: url(./svg/wave-haikei.svg)
-  }
-  .layer2{
-    background-image: url(./svg/layered-waves-haikei.svg);
-  }
-  .layer3{
-    background-image: url(./svg/layered-peaks-haikei.svg);
-  }
-  .layer4{
-    background-image: url(./svg/layered-steps-haikei.svg);
   }
   .moving-txt{
     font-family:Roboto;
@@ -171,3 +144,65 @@
       top: -360px;
     }
   }
+  .home{
+    background: #0f0f10;
+  }
+  .about_me{
+    background: #dd3f31;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+  .skills{
+    background: #0f0f10;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .projects{
+    background: #3c31dd;
+  }
+  .contact{
+    background: #0f0f10;
+  }
+  .about_me-title{
+    font-family:Roboto;
+    font-size: 80px;
+    font-weight: 700;
+    color: #ffffff;
+
+  }
+  .about_me-content{
+    font-family:Roboto;
+    font-size: 30px;
+    position: absolute;
+    z-index: 1;
+    margin-left:10%;
+    margin-right: 10%;
+    font-weight: 500;
+  }
+  .progress_bar{
+    height: 250px;
+    width: 250px;
+    background-color: #dd3f31;
+    margin-left:10px;
+    margin-right: 10px;
+    display: flex;
+  }
+  .outer-circle{
+    height: 200px;
+    width: 200px;
+    background-color: #3c31dd;
+    margin-top: 5px;
+    margin-left: 25px;
+    margin-right: 25px;
+    border-radius: 50%;
+    position: relative;
+  }
+  .skill_name{
+    background-color: #b74c00;
+    position:relative;
+    bottom: 0px;
+  }
+
